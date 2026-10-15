@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+/* Tokens de DESIGN.md + colores de marca Vital Detox */
+@theme {
+  --color-cream: #ffedd7;
+  --color-walnut: #100904;
+  --color-bark: #382416;
+  --color-cork: #40372e;
+  --color-driftwood: #6c5f51;
+  --color-ember: #dc5000;
+  --color-gold: #d6a943;
+  --color-olive: #574a23;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --radius-card: 12px;
+  --radius-pill: 36px;
+  --radius-ghost: 22.5px;
+}
+
+:root {
+  --accent: #d6a943;
+}
+
+html {
+  background: #100904;
+  color: #ffedd7;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #100904;
+  color: #ffedd7;
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01" on;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #d6a943;
+  color: #100904;
+}
+
+/* Voz tipográfica: etiquetas en mayúscula peso 500 */
+.label {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.display {
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+.dashed {
+  border-style: dashed;
+  border-color: #40372e;
+}
+
+.btn-fill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 36px;
+  background: #382416;
+  color: #ffedd7;
+  padding: 14px 24px;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background 0.25s, transform 0.25s;
+}
+.btn-fill:hover {
+  background: #4a3020;
+}
+.btn-fill:active {
+  transform: scale(0.97);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 22.5px;
+  border: 1px solid #ffedd7;
+  color: #ffedd7;
+  padding: 9px 18px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: background 0.25s, color 0.25s, transform 0.25s;
+}
+.btn-ghost:hover {
+  background: #ffedd7;
+  color: #100904;
+}
+.btn-ghost:active {
+  transform: scale(0.97);
+}
+
+.input-line {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #6c5f51;
+  border-radius: 0;
+  color: #ffedd7;
+  padding: 8px 2px;
+  font-size: 15px;
+  outline: none;
+}
+.input-line:focus {
+  border-bottom-color: #ffedd7;
+}
+.input-line::placeholder {
+  color: #6c5f51;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
