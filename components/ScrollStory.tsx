@@ -227,6 +227,9 @@ function FlavorPanel({
 
       <h3 className="display mt-4 text-[clamp(30px,3.6vw,51px)]">{flavor.combo}</h3>
       {!mobile && <p className="mt-4 text-[clamp(16px,1.5vw,20px)] leading-[1.26] text-cream/80">{flavor.value}</p>}
+      <p className="mt-3 text-[13px] leading-snug md:text-[14px]" style={{ color: flavor.accent }}>
+        {flavor.profile}
+      </p>
 
       <ul className="mt-6 space-y-4 md:mt-8 md:space-y-5">
         {flavor.ingredients.map((ing) => (
@@ -301,8 +304,8 @@ function PackPanel() {
       <p className="label text-[12px] text-gold">Pack familiar · 3 × 450 ml</p>
       <h3 className="display mt-3 text-[clamp(34px,4vw,56px)]">Tu semana completa.</h3>
       <p className="mt-3 hidden text-[clamp(16px,1.5vw,20px)] leading-[1.26] text-cream/80 md:block">
-        Remolacha para la energía, cúrcuma para las defensas y zanahoria para la piel. Un sabor para cada objetivo,
-        todos en tu nevera.
+        Remolacha para la energía, cúrcuma para tu bienestar general y zanahoria para tus antioxidantes. Un sabor
+        para cada objetivo, listos para tomar.
       </p>
       <div className="mt-5 flex items-end gap-4 border-t dashed pt-5 md:mt-8">
         <p className="display text-[40px] md:text-[51px]">{formatCOP(PRICES.familyPack)}</p>

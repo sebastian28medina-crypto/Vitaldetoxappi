@@ -22,7 +22,7 @@ export function ShotPack() {
         transition={{ duration: 0.9 }}
         className="relative aspect-[4/5] overflow-hidden md:col-span-5"
       >
-        <Image src="/img/shotpack.jpg" alt="Pack Shot Vital Detox x3" fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
+        <Image src="/img/shotpack.jpg" alt="Pack Shot Raíces Vivas: remolacha, cúrcuma y zanahoria de 60 ml" fill sizes="(min-width: 768px) 40vw, 100vw" className="object-cover" />
       </motion.div>
       <div className="md:col-span-6 md:col-start-7">
         <p className="label text-[12px] text-gold">Pack Shot · 3 × 60 ml</p>
@@ -92,8 +92,8 @@ export function Subscriptions() {
           </h2>
         </div>
         <p className="text-[clamp(18px,2vw,24px)] leading-[1.26] text-cream/80 md:col-span-6 md:col-start-7 md:self-end">
-          Recibe el pack familiar en casa con descuento. Pagas cada mes por transferencia y coordinamos las entregas
-          por WhatsApp. Sin permanencia: pausas o cancelas cuando quieras.
+          Recibe el pack familiar en casa con descuento. Haces el pedido aquí mismo, eliges tu ventana de entrega y
+          tu método de pago. Sin permanencia: pausas o cancelas cuando quieras.
         </p>
       </div>
 
@@ -112,6 +112,11 @@ export function Subscriptions() {
                 s.featured ? "border-gold bg-bark" : "border-cork"
               }`}
             >
+              {s.featured && (
+                <span className="label mb-4 self-start rounded-full bg-gold px-3 py-1 text-[10px] text-walnut">
+                  Más elegido
+                </span>
+              )}
               <div className="flex items-center justify-between">
                 <h3 className="label text-[18px]">{s.name}</h3>
                 <span className="label rounded-full border border-cream/40 px-3 py-1 text-[11px]">
@@ -171,12 +176,16 @@ const FAQS = [
     a: "Una dosis de 60 ml al día, idealmente en ayunas. Puedes tomarla sola o diluida en agua. La botella de 450 ml rinde unas 7 dosis.",
   },
   {
+    q: "¿Qué paquete me conviene?",
+    a: "Bienestar General si quieres una rutina diaria sin preparar nada; Inmunidad si te interesan la vitamina C del limón y la curcumina de la cúrcuma; Energía y Recuperación si entrenas con frecuencia. Si tienes dudas, escríbenos por WhatsApp y te ayudamos a elegir.",
+  },
+  {
     q: "¿Cómo pago?",
-    a: "Agregas tus productos a la canasta y envías el pedido por WhatsApp. Te confirmamos el total y nos envías el comprobante de transferencia por el mismo chat.",
+    a: "Haces tu pedido directamente en esta página: eliges paquete y plan, completas tus datos, la ventana de entrega y el método de pago (transferencia, Nequi o contra entrega). Al confirmar recibes tu número de pedido con las instrucciones de pago.",
   },
   {
     q: "¿Hacen envíos?",
-    a: "Sí. Coordinamos la entrega por WhatsApp según tu ciudad y dirección. El costo de envío se confirma al momento del pedido.",
+    a: "Sí. Entregamos en la dirección y la ventana de entrega que elijas al hacer el pedido. El costo de envío te lo confirmamos al celular que registres.",
   },
 ];
 
@@ -218,11 +227,11 @@ export function Faq() {
 export function Footer() {
   return (
     <footer className="border-t dashed px-5 pb-8 pt-16 md:px-8">
-      <p className="display text-[clamp(64px,16vw,240px)]">Vital Detox</p>
+      <p className="display text-[clamp(64px,16vw,240px)]">Raíces Vivas</p>
       <div className="mt-10 flex flex-col justify-between gap-6 border-t dashed pt-6 md:flex-row md:items-center">
         <div className="flex flex-wrap gap-6">
           <a href={`https://wa.me/${BUSINESS.whatsapp}`} target="_blank" rel="noreferrer" className="label text-[12px] hover:underline">
-            WhatsApp
+            WhatsApp · Soporte
           </a>
           <a href={BUSINESS.instagram} target="_blank" rel="noreferrer" className="label text-[12px] hover:underline">
             Instagram
@@ -232,7 +241,7 @@ export function Footer() {
           </a>
         </div>
         <p className="label text-[11px] text-driftwood">
-          © {new Date().getFullYear()} Vital Detox · Hecho en Colombia ·{" "}
+          © {new Date().getFullYear()} Raíces Vivas · Hecho en Colombia ·{" "}
           <span className="text-ember">Política de privacidad</span>
         </p>
       </div>

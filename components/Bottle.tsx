@@ -75,20 +75,17 @@ export function Bottle({ liquid, labels, size = "450 ml", volume = "FAMILY PACK"
       <text x="100" y="258" textAnchor="middle" fill="#ffedd7" fontSize="8" letterSpacing="1" opacity="0.85">
         {volume}
       </text>
+      {/* marca Raíces Vivas */}
+      <text x="100" y="292" textAnchor="middle" fill="#ffedd7" fontSize="25" fontWeight="600">
+        RAÍCES
+      </text>
+      <text x="100" y="318" textAnchor="middle" fill="#ffedd7" fontSize="25" fontWeight="600">
+        VIVAS
+      </text>
       {labels.map((l, i) => (
         <motion.g key={i} style={{ opacity: l.opacity ?? 1 }}>
-          <text
-            x="100"
-            y="306"
-            textAnchor="middle"
-            fill="#ffedd7"
-            fontSize={l.text.length > 6 ? 20 : 26}
-            fontWeight="600"
-          >
+          <text x="100" y="340" textAnchor="middle" fill="#ffedd7" fontSize="10" fontWeight="600" letterSpacing="2">
             {l.text}
-          </text>
-          <text x="100" y="334" textAnchor="middle" fill="#ffedd7" fontSize="26" fontWeight="600">
-            SHOT
           </text>
         </motion.g>
       ))}
@@ -96,8 +93,8 @@ export function Bottle({ liquid, labels, size = "450 ml", volume = "FAMILY PACK"
         {size}
       </text>
       <line x1="62" y1="372" x2="138" y2="372" stroke="rgba(255,237,215,0.35)" strokeDasharray="2 3" />
-      <text x="100" y="390" textAnchor="middle" fill="#ffedd7" fontSize="11" fontWeight="500" letterSpacing="1">
-        VITAL DETOX
+      <text x="100" y="390" textAnchor="middle" fill="#ffedd7" fontSize="8" fontWeight="500" letterSpacing="1">
+        PRENSADO EN FRÍO
       </text>
     </svg>
   );

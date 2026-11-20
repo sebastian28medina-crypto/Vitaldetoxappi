@@ -9,8 +9,10 @@ const LINKS = [
   { href: "#quienes-somos", label: "Quiénes somos" },
   { href: "#beneficios", label: "Beneficios" },
   { href: "#productos", label: "Productos" },
+  { href: "#paquetes", label: "Paquetes" },
   { href: "#pack-familiar", label: "Pack familiar" },
   { href: "#suscripciones", label: "Suscripciones" },
+  { href: "#opiniones", label: "Opiniones" },
   { href: "#faq", label: "FAQ" },
 ];
 
@@ -33,11 +35,11 @@ export function Navbar() {
       }`}
     >
       <nav className="flex h-16 items-center justify-between px-5 md:px-8">
-        <a href="#inicio" aria-label="Vital Detox, inicio">
+        <a href="#inicio" aria-label="Raíces Vivas, inicio">
           <Logo />
         </a>
 
-        <ul className="hidden items-center gap-7 lg:flex">
+        <ul className="hidden items-center gap-6 xl:flex">
           {LINKS.map((l) => (
             <li key={l.href}>
               <a
@@ -64,14 +66,14 @@ export function Navbar() {
               </span>
             )}
           </button>
-          <button className="lg:hidden" onClick={() => setMenu(!menu)} aria-label="Menú">
+          <button className="xl:hidden" onClick={() => setMenu(!menu)} aria-label="Menú">
             {menu ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </nav>
 
       {menu && (
-        <ul className="flex flex-col gap-5 border-t dashed bg-walnut px-5 py-6 lg:hidden">
+        <ul className="flex max-h-[80svh] flex-col gap-5 overflow-y-auto border-t dashed bg-walnut px-5 py-6 xl:hidden">
           {LINKS.map((l) => (
             <li key={l.href}>
               <a href={l.href} onClick={() => setMenu(false)} className="display text-[28px]">

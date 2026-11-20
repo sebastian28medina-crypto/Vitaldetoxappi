@@ -11,12 +11,12 @@ const inter = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Vital Detox — Extractos funcionales de jengibre",
+  title: "Raíces Vivas — Shots naturales prensados en frío",
   description:
-    "Extractos funcionales prensados en frío: limón, jengibre, remolacha, cúrcuma y zanahoria. Botellas de 450 ml, Pack Shot y suscripciones. Pide por WhatsApp.",
+    "Shots naturales prensados en frío de remolacha, cúrcuma, zanahoria, jengibre y limón. Paquetes temáticos, plan quincenal y pedido directo en línea.",
   openGraph: {
-    title: "Vital Detox",
-    description: "Tu dosis diaria de vitalidad natural.",
+    title: "Raíces Vivas",
+    description: "Lo bueno viene de la raíz.",
     images: ["/img/ingredientes.jpg"],
   },
 };

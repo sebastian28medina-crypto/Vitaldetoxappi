@@ -24,15 +24,14 @@ export function About() {
         </motion.div>
         <motion.div {...fade} className="md:col-span-7">
           <p className="text-[clamp(20px,2.2vw,29px)] leading-[1.26]">
-            Vital Detox es un emprendimiento colombiano 100% digital. Prensamos en frío limón, jengibre y raíces
-            de temporada para crear extractos funcionales ultraconcentrados: los pides por WhatsApp y llegan a tu
-            nevera, sin intermediarios ni punto físico.
+            Raíces Vivas es un emprendimiento colombiano 100% digital. Prensamos en frío limón, jengibre y raíces
+            de temporada para crear shots naturales pensados para quienes cuidan su cuerpo desde la alimentación.
           </p>
           <div className="my-8 border-t dashed" />
           <p className="max-w-xl text-[16px] leading-relaxed text-cream/70">
-            Creemos en las rutinas simples: una dosis al día, ingredientes que puedes pronunciar y un formato que
-            rinde toda la semana. Por eso trabajamos con botellas familiares de 450 ml, shots de 60 ml y planes de
-            suscripción con guías para acompañar tu proceso.
+            Creemos en las rutinas simples: una dosis al día, ingredientes que puedes pronunciar y un formato listo
+            para tomar. Por eso trabajamos con paquetes temáticos de shots de 60 ml, botellas de 450 ml y un plan
+            quincenal para que tu bienestar llegue a casa sin preparar nada.
           </p>
         </motion.div>
       </div>

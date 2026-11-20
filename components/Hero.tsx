@@ -17,7 +17,7 @@ export function Hero() {
       <motion.div className="absolute inset-0" style={{ y: imgY, scale: imgScale }}>
         <Image
           src="/img/ingredientes.jpg"
-          alt="Frascos Vital Detox con jengibre, limón, cúrcuma y remolacha"
+          alt="Frascos Raíces Vivas de remolacha, cúrcuma y zanahoria sobre una mesa de cocina"
           fill
           priority
           sizes="100vw"
@@ -29,14 +29,14 @@ export function Hero() {
       <div className="absolute inset-0 bg-[#574a23] mix-blend-multiply opacity-40" />
 
       <motion.div style={{ y: titleY }} className="relative z-10 px-5 pt-28 md:px-8 md:pt-32">
-        <p className="label text-[12px]">Extractos funcionales de jengibre — prensados en frío</p>
-        <h1 className="display mt-3 text-[clamp(64px,15vw,220px)]">
-          Vital
+        <p className="label text-[12px]">Shots naturales prensados en frío — lo bueno viene de la raíz</p>
+        <h1 className="display mt-[0.2em] text-[clamp(64px,15vw,220px)]">
+          Raíces
           <br />
-          Detox
+          Vivas
         </h1>
         <p className="mt-6 max-w-md text-[clamp(18px,2vw,24px)] leading-[1.26] font-normal">
-          Tu dosis diaria de vitalidad natural. Limón, jengibre y la raíz que tu cuerpo pida hoy.
+          Para acompañar tu rutina de bienestar, hecho con ingredientes naturales. Remolacha, cúrcuma, jengibre y limón, listos para tomar.
         </p>
       </motion.div>
 
@@ -45,13 +45,13 @@ export function Hero() {
         <p className="label text-[12px]">100% natural · sin azúcar añadida · sin conservantes</p>
         <div className="my-3 border-t dashed" />
         <p className="text-[14px] leading-snug text-cream/80">
-          Botellas de 450 ml para tu semana y shots de 60 ml para llevar.
+          Paquetes temáticos, plan quincenal y pedido directo en esta página.
         </p>
       </div>
 
       <a
         href="#quienes-somos"
-        className="absolute bottom-6 right-5 z-10 flex items-center gap-3 rounded-[12px] border border-cream/30 bg-walnut/40 px-4 py-3 backdrop-blur-md md:right-8"
+        className="absolute bottom-24 right-5 z-10 hidden items-center gap-3 rounded-[12px] border border-cream/30 bg-walnut/40 px-4 py-3 backdrop-blur-md md:right-8 md:flex"
       >
         <span className="label text-[12px]">Descubre los sabores</span>
         <motion.span animate={{ y: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.6 }}>
@@ -61,7 +61,7 @@ export function Hero() {
 
       {/* etiqueta vertical lateral */}
       <span className="label absolute right-3 top-1/2 z-10 hidden origin-center -translate-y-1/2 rotate-90 text-[11px] md:block">
-        Vital Detox · 450 ml / 60 ml
+        Raíces Vivas · 60 ml / 450 ml
       </span>
     </section>
   );

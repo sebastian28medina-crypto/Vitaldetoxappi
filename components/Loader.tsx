@@ -55,7 +55,7 @@ export function Loader() {
           transition={{ duration: 0.9, ease: [0.76, 0, 0.24, 1] }}
         >
           <div className="flex items-center justify-between">
-            <span className="label text-[12px]">Vital Detox</span>
+            <span className="label text-[12px]">Raíces Vivas</span>
             <span className="label text-[12px] text-driftwood">Cargando estaciones</span>
           </div>
 
@@ -103,7 +103,7 @@ export function Loader() {
 
           <div className="flex items-end justify-between">
             <span className="label max-w-[60%] text-[12px] text-driftwood">
-              Extractos funcionales de jengibre · prensados en frío
+              Lo bueno viene de la raíz · prensado en frío
             </span>
             <span className="display text-[64px] tabular-nums md:text-[96px]">{Math.round(progress)}%</span>
           </div>
